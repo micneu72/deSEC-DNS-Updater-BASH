@@ -25,11 +25,17 @@ A Bash script that automatically updates DNS records at deSEC.io with your curre
 The script requires a configuration file with the following variables:
 
 ```bash
-# deSEC API Token
-token="your_desec_token_here"
+#!/bin/bash
+# Konfigurationsdatei für desec.sh
 
-# Domain to be updated
-kodihost="your.domain.here"
+# deSEC API Token
+token="dein_desec_token_hier_eintragen"
+
+# deSEC Domain
+domain="deine.domain.hier.eintragen"
+
+# deSEC host
+subname="deine.host.hier.eintragen"
 ```
 
 If no configuration file exists, the script will create a template that you can customize.
@@ -44,7 +50,6 @@ If no configuration file exists, the script will create a template that you can 
 ## Requirements
 
 - Bash shell
-- Either `drill` or `host` command for DNS lookups
 - `curl` for API requests and IP detection
 
 ## License
